@@ -12,10 +12,11 @@ html {
 }
 a {
   text-decoration: none;
+  color: #555;
 }
 .row {
   margin: 0 auto;
-  width: 1024px;
+  width: 1140px;
 }
 ul {
   list-style: none;
@@ -35,18 +36,45 @@ ul {
   flex-direction: column;
 }
 .fa-spotify {
-  font-size: 100px;
+  font-size: 80px;
   color: #fff;
+  transition: color 0.5s;
 }
 .top__content {
   display: flex;
 }
 .wrapper__logo {
-  flex: 40%;
+  flex: 60%;
+}
+
+.fa-spotify:hover {
+  color: #1db954;
 }
 .wrapper__navbar {
-  flex: 60%;
+  flex: 40%;
 }
 .wrapper__main__navbar {
   display: flex;
+  align-items: center;
+}
+.link__nav-link:link,
+.link__nav-link:visited {
+  color: #fff;
+  font-weight: 400;
+  transition: color 0.5s;
+  letter-spacing: 1px;
+}
+.link__nav-link:active,
+.link__nav-link:hover {
+  color: #1db954;
+}
+.link__nav {
+  flex-grow: 1;
+  line-height: 3;
+}
+.fa-user {
+  margin-right: 8px;
+}
+.fa-chevron-down {
+  margin-left: 10px;
 }
