@@ -103,3 +103,28 @@ ul {
 }
 
 /*----------------------------The heading section----------------------------------------------*/
+.music__content__section {
+  margin-top: 50px;
+}
+.music__content__section__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.web__player__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.web__player__box__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.web__player__box__text h1 {
+  margin-bottom: 20px;
+}
+.web__player__box__text p {
+  font-size: 0.8rem;
+}
