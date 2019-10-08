@@ -42,6 +42,7 @@ ul {
 }
 .top__content {
   display: flex;
+  flex: 35%;
 }
 .wrapper__logo {
   flex: 60%;
@@ -78,3 +79,27 @@ ul {
 .fa-chevron-down {
   margin-left: 10px;
 }
+/*--Hero-img-text--*/
+.hero-img-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70%;
+  flex: 35%;
+  color: #fff;
+  font-weight: 100;
+}
+.condition__link__box {
+  flex: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 50%;
+}
+.condition__link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*----------------------------The heading section----------------------------------------------*/
