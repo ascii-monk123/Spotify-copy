@@ -116,6 +116,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .web__player__box__text {
   display: flex;
@@ -127,4 +128,29 @@ ul {
 }
 .web__player__box__text p {
   font-size: 0.8rem;
+  font-weight: 800;
+  color: #555;
+}
+.web__player__link__btn {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  border: 2px solid #f3c05b;
+  border-radius: 50px;
+  width: 350px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f3c05b;
+  color: #fff;
+  transition: border 0.5s, background 0.5s;
+}
+.web__player__link__btn:hover,
+.web__player__link__btn:active {
+  background: #ff9f43;
+  border: 2px solid #ff9f43;
 }
