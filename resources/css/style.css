@@ -28,6 +28,7 @@ ul {
   background: url('https://www.scdn.co/i/premium/premium-hero-dancing-man.png')
       calc(50% + 425px) bottom/contain no-repeat,
     radial-gradient(ellipse at center, #f6cb6c 0%, #f3c65d 0%, #f2ae54 100%);
+  background-attachment: fixed;
 }
 .wrapper {
   width: 100%;
@@ -102,7 +103,7 @@ ul {
   text-decoration: underline;
 }
 
-/*----------------------------The heading section----------------------------------------------*/
+/*----------------------------The Music Details section----------------------------------------------*/
 .music__content__section {
   margin-top: 50px;
 }
@@ -153,4 +154,44 @@ ul {
 .web__player__link__btn:active {
   background: #ff9f43;
   border: 2px solid #ff9f43;
+}
+
+/*----------------------------The Music Links Section----------------------------------------------*/
+.music__links__section {
+  margin-top: 100px;
+}
+.music__links__section--wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.music__links__row {
+  display: flex;
+  justify-content: center;
+}
+.music__links__row:nth-of-type(2) {
+  margin-top: 20px;
+}
+
+.music__links__image {
+  width: 374px;
+  height: 374px;
+  flex: 0 1 auto;
+  background: #000;
+  opacity: 0.4;
+  transition: opacity 0.5s;
+}
+.music__links__image:hover {
+  opacity: 1;
+}
+.music__links__image:nth-of-type(2) {
+  margin-left: 20px;
+}
+.music__links__image:last-of-type {
+  margin-left: 20px;
+}
+.song__image {
+  width: 100%;
+  height: 100%;
 }
