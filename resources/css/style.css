@@ -178,9 +178,9 @@ ul {
   width: 374px;
   height: 374px;
   flex: 0 1 auto;
-  background: #000;
-  opacity: 0.4;
+  opacity: 1;
   transition: opacity 0.5s;
+  position: relative;
 }
 .music__links__image:hover {
   opacity: 1;
@@ -194,6 +194,21 @@ ul {
 .song__image {
   width: 100%;
   height: 100%;
+}
+.music__links__image:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.5s;
+}
+.music__links__image:hover:before {
+  opacity: 0.6;
 }
 
 /*----------------------------The Footer section----------------------------------------------*/
