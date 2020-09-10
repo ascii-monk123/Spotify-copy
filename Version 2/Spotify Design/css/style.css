@@ -1,0 +1,198 @@
+/*Import of google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header.main__header {
+  height: 80vh;
+  width: 100%;
+  margin-top: 0px;
+  background-color: #509bf5;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+header.main__header .navbar__wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  padding: 20px 0px;
+  z-index: 20;
+}
+
+header.main__header nav.main__nav {
+  width: 420px;
+}
+
+header.main__header nav.main__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header.main__header nav.main__nav li {
+  list-style-type: none;
+}
+
+header.main__header nav.main__nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  vertical-align: middle;
+}
+
+header.main__header nav.main__nav a:hover {
+  color: #000;
+}
+
+header.main__header .sidebar__toggle {
+  display: none;
+}
+
+header.main__header .header__title {
+  padding: 0px 30px;
+  color: #fff;
+  margin-top: 50px;
+}
+
+header.main__header .header__title h1 {
+  text-transform: capitalize;
+  text-align: justify;
+  font-size: 40px;
+}
+
+header.main__header .header__content {
+  padding: 0px 30px;
+  color: #fff;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+header.main__header .terms__text {
+  font-size: 10px;
+  margin-top: 50px;
+  font-weight: 400;
+}
+
+header.main__header .terms__text a {
+  color: #fff;
+}
+
+.nav__logo a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__logo a i {
+  font-size: 50px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.sidebar__toggle {
+  position: absolute;
+  top: 27px;
+  right: 15px;
+  z-index: 1000;
+}
+
+.sidebar__toggle .hamburger {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 8px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+div.sidebar__toggle.close .hamburger__1 {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+}
+
+div.sidebar__toggle.close .hamburger__3 {
+  -webkit-transform: rotate(-45deg) translate(10px, -11px);
+          transform: rotate(-45deg) translate(10px, -11px);
+}
+
+div.sidebar__toggle.close .hamburger__2 {
+  opacity: 0;
+}
+
+.premium__subscribe--btn {
+  padding: 15px 50px;
+  text-transform: uppercase;
+  border-radius: 40px;
+  background-color: #1db954;
+  border: 1px solid #1db954;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.premium__subscribe--btn:hover {
+  border: 1px solid #1ed760;
+  background-color: #1ed760;
+}
+
+@media (max-width: 720px) {
+  header.main__header .header__title {
+    padding: 0;
+  }
+  header.main__header .header__title h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  header.main__header .header__content {
+    padding: 0px;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 520px) {
+  header.main__header nav.main__nav {
+    display: none;
+  }
+  header.main__header .sidebar__toggle {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 420px) {
+  header.main__header .header__title h1 {
+    font-size: 25px;
+  }
+  header.main__header .header__content {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
