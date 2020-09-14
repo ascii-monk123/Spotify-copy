@@ -143,6 +143,72 @@ div.sidebar__toggle.close .hamburger__2 {
   opacity: 0;
 }
 
+.main__sidebar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  z-index: 100;
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  opacity: 0;
+}
+
+.main__sidebar.active {
+  opacity: 1 !important;
+  width: 100% !important;
+}
+
+.main__sidebar .sidebar__wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__sidebar .sidebar__wrapper ul.sidebar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 60%;
+}
+
+.main__sidebar .sidebar__wrapper ul.sidebar__list li {
+  list-style-type: none;
+}
+
+.main__sidebar .sidebar__wrapper ul.sidebar__list li a:link, .main__sidebar .sidebar__wrapper ul.sidebar__list li a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.main__sidebar .sidebar__wrapper ul.sidebar__list li a:hover, .main__sidebar .sidebar__wrapper ul.sidebar__list li a:active {
+  color: #1ed760;
+}
+
 .premium__subscribe--btn {
   padding: 15px 50px;
   text-transform: uppercase;
