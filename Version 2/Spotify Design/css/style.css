@@ -1,5 +1,102 @@
 /*Import of google fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+/*Import of the other scss folders*/
+.section__wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+/*Importing the pages*/
+.prepaid__plan__section {
+  background-color: rgba(220, 221, 225, 0.4);
+  width: 100%;
+  height: 420px;
+}
+
+.wrapper__text {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper__text h1.prepaid__header {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.wrapper__text p.prepaid__details {
+  font-size: 23px;
+}
+
+.wrapper__text p.prepaid__sub-text {
+  font-weight: bold;
+}
+
+.wrapper__text .btn__container {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper__text .btn__container a.premium__link {
+  text-decoration: none;
+  padding: 15px 30px;
+  background: #1e272e;
+  border-radius: 50px;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.wrapper__text .btn__container a.premium__link:hover {
+  background-color: #000;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+@media (max-width: 620px) {
+  .wrapper__text h1.prepaid__header {
+    font-size: 30px;
+  }
+  .wrapper__text p.prepaid__details {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .wrapper__text {
+    width: 100%;
+  }
+  .wrapper__text h1.prepaid__header {
+    font-size: 23px;
+  }
+  .wrapper__text p.prepaid__details {
+    font-size: 16px;
+  }
+  .wrapper__text p.prepaid__sub-text {
+    font-size: 13px;
+  }
+  .wrapper__text .btn__container {
+    width: 100%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

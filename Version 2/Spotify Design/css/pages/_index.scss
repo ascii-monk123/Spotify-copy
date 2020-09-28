@@ -1,0 +1,74 @@
+@import "../colors";
+.prepaid__plan__section {
+  background-color: $color-grey-light;
+  width: 100%;
+  height: 420px;
+}
+.wrapper__text {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  h1.prepaid__header {
+    font-size: 40px;
+    text-transform: capitalize;
+  }
+  p.prepaid__details {
+    font-size: 23px;
+  }
+  p.prepaid__sub-text {
+    font-weight: bold;
+  }
+  .btn__container {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    a.premium__link {
+      text-decoration: none;
+      padding: 15px 30px;
+      background: $color-black-light;
+      border-radius: 50px;
+      color: #fff;
+      transition: all 0.5s;
+      cursor: pointer;
+      display: inline-block;
+      &:hover {
+        background-color: $color-black;
+        transform: translateY(-10px);
+      }
+    }
+  }
+}
+@media (max-width: 620px) {
+  .wrapper__text {
+    h1.prepaid__header {
+      font-size: 30px;
+    }
+    p.prepaid__details {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .wrapper__text {
+    width: 100%;
+    h1.prepaid__header {
+      font-size: 23px;
+    }
+    p.prepaid__details {
+      font-size: 16px;
+    }
+    p.prepaid__sub-text {
+      font-size: 13px;
+    }
+    .btn__container {
+      width: 100%;
+      a.premium__link {
+      }
+    }
+  }
+}
